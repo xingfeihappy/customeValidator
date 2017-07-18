@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1" charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../lib/bootstrap.min.css">
+	<style type="text/css">
+		.xf-container{
+			
+		}
+	</style>
+</head>
+<body>
+	<div class="container xf-container">
+		<div class="row">
+			<form id="demo">
+	  <div class="form-group">
+	    <label for="exampleInputEmail1">Email address</label>
+	    <input type="text" class="form-control" datatype="n3-9" tipmessage="无效的邮箱地址" id="exampleInputEmail1" value="4444" placeholder="Email">
+	  </div>
+	  <div class="form-group">
+	    <label for="exampleInputPassword1">Password</label>
+	    <input type="password" class="form-control" datatype="s4-8" tipmessage="密码无效：长度为4-8的字符串" id="exampleInputPassword1" placeholder="Password" value="dsdd">
+	  </div>
+	  <div class="form-group">
+	    <label for="exampleInputFile">File input</label>
+	    <input type="text" id="exampleInputFile" datatype="n3-7" tipmessage="无效：长度为3-7的数字" value="9933">
+	    <p class="help-block">Example block-level help text here.</p>
+	  </div>
+	  <div class="checkbox">
+	    <label>
+	    </label>
+	  </div>
+	  <button type="submit" class="btn btn-default">Submit</button>
+	</form>
+		</div>
+	</div>
+	
+
+</body>
+<script type="text/javascript" src="../lib/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="../lib/validator.js"></script>
+<!-- <script type="text/javascript" src="../lib/bootstrap.js"></script>
+ -->
+ <script type="text/javascript">
+ 	//两种调用方式 
+ 	//1
+ 	//  $(".help-block").click(function(){
+ 	//  	$.validator();
+ 	//  })
+ 	//2
+ 	// $(".help-block").test();
+ 	$(":submit").click(function(e){
+ 		e.preventDefault();
+ 		$("#demo").validator();
+ 	})
+ 	
+ </script>
+
+ </html>

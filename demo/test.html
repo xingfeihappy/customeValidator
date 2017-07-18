@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		@media (min-width: 768px){
+			.col-sm{
+				float: left;
+				width:200px;
+				height:100px;
+				border:1px solid red;
+			}
+
+		}
+		@media (min-width: 1200px){
+			.col-lg{
+				float:left;
+				width:400px;
+				height:200px;
+				border:1px solid blue;
+			}
+		}
+		div:before{
+			display: block;
+			content: " " 
+		}
+	</style>
+</head>
+<body>
+  <div class="col-lg col-sm"></div>
+</body>
+</html>
